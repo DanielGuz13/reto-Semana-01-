@@ -29,7 +29,7 @@ def procesar_linea(linea):
     - Retorna el resultado
     """
     
-    #Separa los valores por comas y suma total de los valores
+    #Separa los valores por comas y suma total de los valores para regresarlos de manera correcta
     valores = linea.split(',')
     valores_limpios = [limpiar_valor(v) for v in valores]
     return sum(convertir_a_entero(v) for v in valores_limpios)
