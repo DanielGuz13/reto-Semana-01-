@@ -30,9 +30,7 @@ def procesar_linea(linea):
     """
     
     #Separa los valores por comas y suma total de los valores
-    valores = linea.split(',')
-    valores_limpios = [limpiar_valor(v) for v in valores]
-    return sum(convertir_a_entero(v) for v in valores_limpios)
+  
 
     #Truncado de los mismos valores
 def convertir_a_entero(texto):
